@@ -1,0 +1,32 @@
+slutlig  CircleMenuView menu on = ( CircleMenuView ) findViewById ( R . id . circle_menu);
+menyn . setEventListener ( ny  CircleMenuView . EventListener () {
+      @Override 
+    public  void  onMenuOpenAnimationStart ( @NonNull  CircleMenuView  view ) {
+          Log . d ( " D " , " onMenuOpenAnimationStart " );
+    }
+
+    @Override 
+    public  void  onMenuOpenAnimationEnd ( @NonNull  CircleMenuView  view ) {
+          Log . d ( " D " , " onMenuOpenAnimationEnd " );
+    }
+
+    @Override 
+    public  void  onMenuCloseAnimationStart ( @NonNull  CircleMenuView  view ) {
+          Log . d ( " D " , " onMenuCloseAnimationStart " );
+    }
+
+    @Override 
+    public  void  onMenuCloseAnimationEnd ( @NonNull  CircleMenuView  view ) {
+          Log . d ( " D " , " onMenuCloseAnimationEnd " );
+    }
+
+    @Override 
+    public  void  onButtonClickAnimationStart ( @NonNull  CircleMenuView  view , int  index ) {
+          Log . d ( " D " , " onButtonClickAnimationStart | index: "  + index);
+    }
+
+    @Override 
+    public  void  onButtonClickAnimationEnd ( @NonNull  CircleMenuView  view , int  index ) {
+          Log . d ( " D " , " onButtonClickAnimationEnd | index: "  + index);
+    }
+});
